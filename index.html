@@ -4,30 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer ></script>
 </head>
 <body>
     
     <div class="calculator">
+        <div id="display"></div>
+        <button id="clear" onclick="clr()">Clear</button>
+    <div id="buttons">
         <div class="digits">
-            <div class="digitButton" id="0">0</div>
-            <div class="digitButton" id="1">1</div>
-            <div class="digitButton" id="2">2</div>
-            <div class="digitButton" id="3">3</div>
-            <div class="digitButton" id="4">4</div>
-            <div class="digitButton" id="5">5</div>
-            <div class="digitButton" id="6">6</div>
-            <div class="digitButton" id="7">7</div>
-            <div class="digitButton" id="8">8</div>
-            <div class="digitButton" id="9">9</div>
+            <button class="digitButton" id="7" onclick="display(event)">7</button>
+            <button class="digitButton" id="8" onclick="display(event)">8</button>
+            <button class="digitButton" id="9" onclick="display(event)">9</button>
+            <button class="digitButton" id="4" onclick="display(event)">4</button>
+            <button class="digitButton" id="5" onclick="display(event)">5</button>
+            <button class="digitButton" id="6" onclick="display(event)">6</button>
+            <button class="digitButton" id="1" onclick="display(event)">1</button>
+            <button class="digitButton" id="2" onclick="display(event)">2</button>
+            <button class="digitButton" id="3" onclick="display(event)">3</button>
+            <button class="digitButton" id="." onclick="display(event)">.</button>
+            <button class="digitButton" id="0" onclick="display(event)">0</button>
         </div>
         <div class="operators">
-            <button class="operator" id="add">+</button>
-            <button class="operator" id="subract">-</button>
-            <button class="operator" id="multiply">x</button>
-            <button class="operator" id="divide">/</button>
+            <button class="operator" id=" + " onclick="display(event)">+</button>
+            <button class="operator" id=" - " onclick="display(event)">-</button>
+            <button class="operator" id=" x " onclick="display(event)">x</button>
+            <button class="operator" id=" / " onclick="display(event)">/</button>
+            <button class="equals" onclick="operate(display(event))">=</button>
         </div>
-        <button class="equals">=</button>
+    </div>
     </div>
 </body>
 </html>
