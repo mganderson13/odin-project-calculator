@@ -1,0 +1,56 @@
+.calculator {
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 450px;
+    height: 600px;
+    border: 5px solid black;
+}
+
+button {
+    margin: 5px;
+    height: 66.35px;
+    width: 90px;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.digits {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 10px;
+}
+
+.digitButton {
+    box-sizing: border-box;
+    width: 90px;
+    height: 90px;
+}
+
+.operators {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.equals {
+    height: 100px;
+}
+
+#clear {
+    margin-left: 15px;
+}
+
+#display {
+    border: 2px solid black;
+    height: 75px;
+    margin: 10px;
+    font-size: 50px;
+    padding-left: 10px;
+}
