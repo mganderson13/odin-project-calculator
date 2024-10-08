@@ -2,9 +2,19 @@ let a = "";
 let b = "";
 let operator = "";
 const displayScreen = document.getElementById("display");
+const decimal = document.getElementById(".");
 
 function clr() {
     displayScreen.innerHTML = "";
+    decimal.disabled = false;
+}
+
+function oneDecimal() {
+    decimal.disabled = true;
+}
+
+function decimalReset(){
+    decimal.disabled= false;
 }
 
 function operate(equation) {

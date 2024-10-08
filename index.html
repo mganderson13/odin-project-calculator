@@ -23,15 +23,15 @@
             <button class="digitButton" id="1" onclick="display(event)">1</button>
             <button class="digitButton" id="2" onclick="display(event)">2</button>
             <button class="digitButton" id="3" onclick="display(event)">3</button>
-            <button class="digitButton" id="." onclick="display(event)">.</button>
+            <button class="digitButton" id="." onclick="display(event); oneDecimal()">.</button>
             <button class="digitButton" id="0" onclick="display(event)">0</button>
         </div>
         <div class="operators">
-            <button class="operator" id=" + " onclick="display(event)">+</button>
-            <button class="operator" id=" - " onclick="display(event)">-</button>
-            <button class="operator" id=" x " onclick="display(event)">x</button>
-            <button class="operator" id=" / " onclick="display(event)">/</button>
-            <button class="equals" onclick="operate(display(event))">=</button>
+            <button class="operator" id=" + " onclick="display(event); decimalReset()">+</button>
+            <button class="operator" id=" - " onclick="display(event); decimalReset()">-</button>
+            <button class="operator" id=" x " onclick="display(event); decimalReset()">x</button>
+            <button class="operator" id=" / " onclick="display(event); decimalReset()">/</button>
+            <button class="equals" onclick="operate(display(event)); decimalReset()">=</button>
         </div>
     </div>
     </div>
